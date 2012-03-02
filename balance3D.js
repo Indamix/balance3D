@@ -1,13 +1,11 @@
 /*!
  *    balance3D
- *
+ *    http://indamix.github.com/balance3D/
  *
  *    Copyright 2012, Indamix
+ *    http://indamix.github.com/license.txt
  *
- *    Dual licensed under the MIT or GPL Version 2 licenses.
  */
-
-// man: http://www.webkit.org/blog/386/3d-transforms/
 
 // TODO mind initial device orientation
 // TODO grid demo with gradient for smooth, perspective
@@ -33,7 +31,7 @@ balance3D = global.balance3D = function(elm, options){
 	elm.style.webkitTransition = 'all ' + options.smooth + 's';
 
 	if (initialized) return;
-	window.addEventListener('deviceorientation', listener);// TODO maintain .attachEvent?
+	window.addEventListener('deviceorientation', listener); // no need to maintain 'attachEvent', anyway, IE<=9 doesn't support deviceorientation
 	initialized = true;
 }
 
@@ -54,6 +52,7 @@ balance3D.stop = function(elm){
 function listener(e){console.log(e)
 	for (var i = 0, l = elms.length; i < l; ++i)
 		elms[i].elm.style.webkitTransform = 'perspective(' + elms[i].options.perspective + 'px) rotateZ(' + -e.gamma + 'deg) rotateX(' + e.beta + 'deg)';
+
 }
 
 })(this);
