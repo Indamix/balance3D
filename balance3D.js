@@ -24,6 +24,7 @@ balance3D = global.balance3D = function(elm, options){
 	if (!window.DeviceOrientationEvent) return; // throw?
 	if (!(this instanceof balance3D)) return new balance3D(elm, options);
 	
+	options = options || {};
 	options.perspective = options.perspective || 1000;
 	options.smooth = options.smooth === undefined ? .3 : options.smooth;
 
