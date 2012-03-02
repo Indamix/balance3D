@@ -35,7 +35,7 @@ balance3D = global.balance3D = function(elm, options){
 	initialized = true;
 }
 
-balance3D.stop = function(elm){
+balance3D.stop = function(elm){// TODO elms array
 	if (elm === undefined || elms.length === 1) {
 		elms = [];
 		window.removeEventListener('deviceorientation', listener);
