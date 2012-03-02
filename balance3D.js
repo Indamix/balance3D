@@ -12,6 +12,7 @@
 // TODO check whether browser is css3d compatible
 // TODO fallback to css2d
 // TODO add documentation
+// TODO add css3d support for non-webkit browsers, if any
 // TODO different angle layouts for laptops (_/) and phones/tablets (_)
 (function(global, undefined){
 
