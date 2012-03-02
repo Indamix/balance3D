@@ -1,4 +1,4 @@
-# [balance3D](indamix.github.com/balance3D)
+# [balance3D](indamix.github.com/balance3D) — DOM elements 3D balancer
 
 ## Start balancing element
 
@@ -9,8 +9,8 @@
 	options = {
 		perspective: pixels,
 		/*
-			Distance in pixels.
-			You can think of it as though you’re looking at the page from a such distance away.
+			Distance in pixels
+			You can think of it as though you’re looking at the page from a such distance away
 			Default: 1000
 		*/
 		smooth: seconds
@@ -23,18 +23,20 @@
 
 ### Examples
 
-	balance3D(document.getElementById('elm'))
+	balance3D(document.getElementById('elm'));
 
-	balance3D(document.getElementById('elm'), { perspective: 500 })
+	balance3D(document.getElementById('elm'), { perspective: 500 });
 
-	balance3D(document.getElementById('elm'), { smooth: 1 })
+	balance3D(document.getElementById('elm'), { smooth: 1 });
 
-	balance3D(document.getElementById('elm'), { perspective: 300, smooth: .2 })
+	balance3D(document.getElementById('elm'), { perspective: 300, smooth: .2 });
 
 ## Stop balancing element(s)
 
 Stop balancing element _elm_
+
 	balance3D.stop(elm)
 
 Stop balancing all elements
+
 	balance3D.stop()
