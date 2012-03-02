@@ -2,9 +2,9 @@
 
 ## Start balancing element
 
-`balance3D(element[, options]);`
+	balance3D(element[, options]);
 
-## Options
+### Options
 
 	options = {
 		perspective: pixels,
@@ -15,7 +15,7 @@
 		*/
 		smooth: seconds
 		/*
-			Orientation information from device gets jitter, smoothing will improve visual perception
+			Orientation information from device comes with jitter, smoothing will improve visual perception
 			Time in seconds to smooth the animation
 			Default: .3
 		*/
