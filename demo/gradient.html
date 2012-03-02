@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>balance3D</title>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="viewport" content="width=450px"/>
+<style>
+html, body {margin:0;padding:0;background:#000}
+#grid {text-align:center;width:400px;margin:50px auto 0}
+</style>
+</head>
+<body>
+<div id="grid"></div>
+<script src="../balance3D.js"></script>
+<script>
+
+(function(d){
+
+	var $grid = d.getElementById('grid');
+
+	var n = 16;
+	while (n--) {
+		$image = d.createElement('image');
+		$image.src = '../images/cluster.jpg';
+		$grid.appendChild($image);
+		balance3D($image, {
+			perspective: 100,
+			smooth: n / 10
+		})
+	}
+
+})(document);
+
+
+</script>
+</body>
+</html>
