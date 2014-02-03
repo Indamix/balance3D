@@ -1,4 +1,4 @@
-# [balance3D](indamix.github.com/balance3D) — DOM elements 3D balancer
+# [balance3D](indamix.github.com/balance3D)
 
 It uses [DeviceOrientationEvent](http://dev.w3.org/geo/api/spec-source-orientation.html) (deviceorientation) and [CSS 3D Transforms](http://www.w3.org/TR/css3-3d-transforms/) to balance DOM elements accoring to current device orientation
 
